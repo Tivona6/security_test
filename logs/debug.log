@@ -1,0 +1,16 @@
+2024-04-10 18:06:30 Notice: GPG couldn't be initialized, GPG encryption and signing will be not available.
+[Crypt_GPG_FileException] The 'homedir' "" is not readable or does not exist and cannot be created. This can happen if 'homedir' is not specified in the Crypt_GPG options, Crypt_GPG is run as the web user, and the web user has no home directory.
+Stack Trace:
+#0 /var/www/MISP/app/Vendor/pear/crypt_gpg/Crypt/GPGAbstract.php(256): Crypt_GPG_Engine->__construct()
+#1 /var/www/MISP/app/Lib/Tools/CryptGpgExtended.php(11): Crypt_GPGAbstract->__construct()
+#2 /var/www/MISP/app/Lib/Tools/GpgTool.php(34): CryptGpgExtended->__construct()
+#3 /var/www/MISP/app/Model/User.php(1516): GpgTool::initializeGpg()
+#4 /var/www/MISP/app/Model/User.php(859): User->initializeGpg()
+#5 /var/www/MISP/app/Model/User.php(983): User->sendEmail()
+#6 /var/www/MISP/app/Controller/UsersController.php(770): User->initiatePasswordReset()
+#7 [internal function]: UsersController->admin_add()
+#8 /var/www/MISP/app/Lib/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs()
+#9 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction()
+#10 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke()
+#11 /var/www/MISP/app/webroot/index.php(99): Dispatcher->dispatch()
+#12 {main}

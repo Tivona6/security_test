@@ -1,0 +1,8 @@
+  mip: VID2a3zhq02XBXoe26VSiD323aLO7ZXzRDh9ZpPG
+cortex:  9ntcjdkwN/KVUMLSka7kqX7/XPkaplnT
+misp password:  mispadminpass12345#
+
+
+
+
+chown -R www-data.www-data /var/www/MISP

@@ -1,0 +1,382 @@
+2024-03-30 12:09:49,066 [INFO] from org.reflections.Reflections in main - Reflections took 1081 ms to scan 2 urls, producing 102 keys and 701 values
+2024-03-30 12:09:49,233 [INFO] from module in main - Loading model class org.thp.cortex.models.ReportModel
+2024-03-30 12:09:49,267 [INFO] from module in main - Loading model class org.thp.cortex.models.JobModel
+2024-03-30 12:09:49,274 [INFO] from module in main - Loading model class org.thp.cortex.models.ArtifactModel
+2024-03-30 12:09:49,275 [INFO] from module in main - Loading model class org.elastic4play.services.AttachmentModel
+2024-03-30 12:09:49,276 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerModel
+2024-03-30 12:09:49,282 [INFO] from module in main - Loading model class org.elastic4play.services.DBListModel
+2024-03-30 12:09:49,282 [INFO] from module in main - Loading model class org.thp.cortex.models.UserModel
+2024-03-30 12:09:49,284 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerConfigModel
+2024-03-30 12:09:49,286 [INFO] from module in main - Loading model class org.thp.cortex.models.AuditModel
+2024-03-30 12:09:49,294 [INFO] from module in main - Loading model class org.thp.cortex.models.OrganizationModel
+2024-03-30 12:09:49,328 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.LdapAuthSrv
+2024-03-30 12:09:49,329 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.KeyAuthSrv
+2024-03-30 12:09:49,329 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.LocalAuthSrv
+2024-03-30 12:09:49,335 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.OAuth2Srv
+2024-03-30 12:09:49,336 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.ADAuthSrv
+2024-03-30 12:09:57,096 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2024-03-30 12:10:17,019 [INFO] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-4 - New worker list:
+
+	RiskIQ_Certificates 1.0
+	IPVoid 1.0
+	SEKOIAIntelligenceCenter_Indicators 1.0
+	RiskIQ_Projects 1.0
+	Shuffle 1.0
+	SEKOIAIntelligenceCenter_Context 1.0
+	HarfangLab-GetArtifactAll 1.0
+	RiskIQ_Cookies 1.0
+	HIBP_Query 2.0
+	CheckPoint_Unlock 1.0
+	ONYPHE_ASM 1.0
+	DNSSinkhole 1.0
+	DomainToolsIris_Investigate 1.0
+	ThreatMiner 1.0
+	MSDefender-UnisolateMachine 1.0
+	Autofocus_SearchJSON 1.0
+	MSDefender-PushIOC-Block 1.0
+	DomainTools_Reputation 2.0
+	PaloAltoCortexXDR_isolate 1.0
+	AMPforEndpoints_SCDAdd 1.0
+	MaxMind_GeoIP 4.0
+	Crowdstrike_Falcon_Custom_IOC_API 1.0
+	FileInfo 8.0
+	PaloAltoNGFW_block_external_user 1.0.0
+	SentinelOne_Hash_Blacklister 1.0
+	CheckPoint_Lock 1.0
+	FireEyeiSight 1.0
+	Malwares_GetReport 1.0
+	Mnemonic_pDNS_Public 3.0
+	SEKOIAIntelligenceCenter_Observables 1.0
+	THOR_Thunderstorm_ScanSample 0.3.1
+	Verifalia 1.0
+	ONYPHE_Vulnscan 1.0
+	RiskIQ_Articles 1.0
+	DomainTools_Risk 2.0
+	EchoTrail 1.0
+	PassiveTotal_Osint 2.0
+	IP-API 1.0
+	CIRCLPassiveDNS 2.0
+	CyberChef_FromHex 1.0
+	PaloAltoNGFW_block_port_for_external_communication 2.0.0
+	HarfangLab_SearchDriverByFileName 1.0
+	PassiveTotal_Passive_Dns 2.1
+	Shodan_Host 1.0
+	SendGrid 1.0
+	HarfangLab_SearchDriverByHash 1.0
+	DomainTools_WhoisLookupUnparsed 2.0
+	Hashdd_Detail 2.0
+	RiskIQ_Resolutions 1.0
+	PassiveTotal_Host_Pairs 2.0
+	Hunterio_DomainSearch 1.0
+	CyberChef_FromCharCode 1.0
+	MISPWarningLists 2.0
+	Gmail_BlockDomain 1.0
+	DomainTools_ReverseIPWhois 2.0
+	AbuseIPDB 1.0
+	TorProject 1.0
+	RecordedFuture 2.0
+	HarfangLab-GetStartupFiles 1.0
+	Redmine_Issue 1.0
+	CIRCLPassiveSSL 2.0
+	Inoitsu 1.0
+	Fortiguard_URLCategory 2.1
+	Splunk_Search_User_Agent 3.0
+	RiskIQ_HostpairParents 1.0
+	Yara 2.0
+	VirusTotal_Scan 3.1
+	HarfangLab-SearchHash 1.0
+	EmergingThreats_DomainInfo 1.0
+	DNSDB_DomainName 2.0
+	PhishTank_CheckURL 2.1
+	DNS-RPZ 1.0
+	MailIncidentStatus 1.0
+	ONYPHE_Search 1.0
+	PaloAltoNGFW_block_internal_domain 2.0.0
+	StamusNetworks_HostID 1.0
+	IPinfo_Hosted_Domains 1.0
+	RiskIQ_Subdomains 1.0
+	EmlParser 2.1
+	SpamhausDBL 1.0
+	SophosIntelix_GetReport 0.3
+	PassiveTotal_Trackers 2.0
+	ThreatResponse 1.0
+	VirusTotal_GetReport 3.1
+	Gmail_BlockSender 1.0
+	Maltiverse_Report 1.0
+	HarfangLab-GetPersistence 1.0
+	SophosIntelix_Submit_Dynamic 0.1
+	HarfangLab-SearchDestinationIP 1.0
+	MSDefenderOffice365_unblock 1.0
+	BackscatterIO_GetObservations 1.0
+	OTXQuery 2.0
+	Investigate_Sample 1.0
+	PaloAltoNGFW_unblock_port_for_internal_communication 1.0.0
+	MetaDefenderCloud_Reputation 1.0
+	Autofocus_SearchIOC 1.0
+	Test 1.0
+	Splunk_Search_Mail_Email 3.0
+	CheckPhish 1.0
+	Patrowl_GetReport 1.0
+	NSRL 1.0
+	AMPforEndpoints_MoveGUID 1.0
+	RT4-CreateTicket 1.0
+	PhishingInitiative_Scan 1.0
+	Mailer 1.0
+	RiskIQ_Summary 1.0
+	C1fApp 1.0
+	Diario_Scan 1.0
+	MSDefenderOffice365_block 1.0
+	Zscaler 1.3
+	OpenCTI_SearchObservables 2.0
+	Nessus 2.0
+	KnowBe4 1.0
+	SecurityTrails_Passive_DNS 1.0
+	Cylance 1.0
+	SentinelOne_DeepVisibility_DNSQuery 1.0
+	HarfangLab-GetSessions 1.0
+	Virusshare 2.0
+	HarfangLab-GetScheduledTasks 1.0
+	Velociraptor_Flow 0.1
+	DomainTools_ReverseIP 2.0
+	Crowdsec_Analyzer 1.0
+	Yeti 1.0
+	StaxxSearch 1.0
+	PaloAltoNGFW_unblock_external_domain 1.0.0
+	SinkDB 1.1
+	PaloAltoNGFW_unblock_external_IP_address 1.0.0
+	MalwareBazaar 1.0
+	DomainToolsIris_AddRiskyDNSTag 1.0
+	Robtex_Forward_PDNS_Query 1.0
+	CheckPhish_Submit 1.0
+	RiskIQ_Services 1.0
+	HarfangLab-GetDrivers 1.0
+	HarfangLab-GetWMI 1.0
+	WOT_Lookup 2.0
+	JoeSandbox_File_Analysis_Inet 3.0
+	RiskIQ_Whois 1.0
+	JoeSandbox_File_Analysis_Noinet 3.0
+	HarfangLab-GetPrefetches 1.0
+	Elasticsearch_Analysis 1.0
+	Splunk_Search_Hash 3.0
+	Autofocus_GetSampleAnalysis 1.0
+	HarfangLab-KillProcess 1.0
+	Virustotal_Downloader 0.1
+	DuoUnlockUserAccount 1.0
+	PaloAltoNGFW_unblock_internal_user 1.0.0
+	EmergingThreats_IPInfo 1.0
+	Shodan_ReverseDNS 1.0
+	Shodan_Host_History 1.0
+	HarfangLab-GetServices 1.0
+	Wazuh 1.0
+	PassiveTotal_Whois_Details 2.0
+	BitcoinAbuse 1.0
+	Urlscan.io_Search 0.1.1
+	Jupyter_Run_Notebook_Responder 1.0
+	CIRCLHashlookup 1.1
+	PaloAltoNGFW_block_external_IP_address 2.0.0
+	DomainTools_WhoisLookup 2.0
+	PaloAltoNGFW_block_internal_IP_address 2.0.0
+	HarfangLab-GetArtifactRamdump 1.0
+	GRR 0.1
+	Cyberprotect_ThreatScore 3.0
+	PaloAltoNGFW_block_external_domain 2.0.0
+	ZEROFOX_Close_alert 1.0
+	Minemeld 1.0
+	PassiveTotal_Malware 2.0
+	DomainTools_ReverseNameServer 2.0
+	IntezerCommunity 1.0
+	DNSDB_IPHistory 2.0
+	Ldap_Query 2.0
+	PaloAltoNGFW_unblock_internal_domain 1.0.0
+	HarfangLab-IsolateHost 1.0
+	GoogleSafebrowsing 2.0
+	PassiveTotal_Enrichment 2.0
+	PayloadSecurity_File_Analysis 1.0
+	Triage 1.0
+	Msg_Parser 3.0
+	PaloAltoWildFire 1.0
+	DomainMailSPFDMARC_Analyzer 1.1
+	PassiveTotal_Unique_Resolutions 2.0
+	Splunk_Search_User 3.0
+	RiskIQ_PushArtifactToProject 1.0
+	CuckooSandbox_Url_Analysis 1.2
+	BackscatterIO_Enrichment 1.0
+	DomainTools_ReverseWhois 2.0
+	SophosIntelix_Submit_Static 0.1
+	Threatcrowd 1.0
+	Umbrella_Blacklister 1.1
+	ZEROFOX_Takedown_request 1.0
+	CyberCrime-Tracker 1.0
+	Gmail_DeleteMessage 1.0
+	EmailRep 1.0
+	KasperskyThreatIntelligencePortal 1.0
+	URLhaus 2.0
+	MISP 2.1
+	TeamCymruMHR 1.0
+	DShield_lookup 1.0
+	EmergingThreats_MalwareInfo 1.0
+	StopForumSpam 1.0
+	DomainTools_HostingHistory 2.0
+	CyberChef_FromBase64 1.0
+	VirusTotal_Rescan 3.1
+	Abuse_Finder 3.0
+	Investigate_Categorization 1.0
+	HarfangLab-GetArtifactMFT 1.0
+	HarfangLab-SearchSourceIP 1.0
+	HarfangLab-GetPipes 1.0
+	SecurityTrails_Whois 1.0
+	DomainTools_WhoisHistory 2.0
+	VirusTotal_DownloadSample 3.1
+	MetaDefenderCloud_Scan 1.0
+	PassiveTotal_Ssl_Certificate_History 2.0
+	HarfangLab-GetArtifactUSN 1.0
+	HarfangLab-GetArtifactPrefetch 1.0
+	Splunk_Search_Other 3.0
+	Malpedia 1.0
+	ONYPHE_Summary_API 1.1
+	MetaDefenderCore_Scan 1.0
+	Splunk_Search_Registry 3.0
+	RiskIQ_Malware 1.0
+	Crt_sh_Transparency_Logs 1.0
+	PaloAltoCortexXDR_scan 1.0
+	IPinfo_Details 1.0
+	CERTatPassiveDNS 2.0
+	Urlscan.io_Scan 0.1.0
+	RiskIQ_Components 1.0
+	HarfangLab-GetNetworkShares 1.0
+	Gatewatcher_CTI 1.0
+	DomainToolsIris_CheckMaliciousTags 1.0
+	ProofPoint_Lookup 1.0
+	PayloadSecurity_Url_Analysis 1.0
+	HarfangLab-GetArtifactLogs 1.0
+	MSDefender-FullVirusscan 1.0
+	Shodan_DNSResolve 1.0
+	Splunk_Search_Mail_Subject 3.0
+	VMRay 4.1
+	GoogleDNS_resolve 1.0.0
+	DomainToolsIris_Pivot 1.0
+	MetaDefenderCloud_GetReport 1.0
+	FalconSandbox 1.0
+	OpenCTI_SearchExactObservable 2.0
+	Hipposcore 2.0
+	Shodan_InfoDomain 1.0
+	CuckooSandbox_File_Analysis_Inet 1.2
+	HarfangLab-GetArtifactHives 1.0
+	DNS_Lookingglass 1.0
+	Jupyter_Run_Notebook_Analyzer 1.0
+	GoogleVisionAPI_WebDetection 1.0.0
+	Valhalla_GetRuleMatches 0.3.1
+	TalosReputation 1.0
+	RiskIQ_Trackers 1.0
+	Vulners_CVE 1.0
+	Splunk_Search_IP 3.0
+	TorBlutmagie 1.0
+	SpamAssassin 1.0
+	Splunk_Search_Domain_FQDN 3.0
+	MSDefender-IsolateMachine 1.0
+	RiskIQ_Reputation 1.0
+	FireHOLBlocklists 2.0
+	Vulners_IOC 1.0
+	NERD 1.0
+	RiskIQ_Artifacts 1.0
+	ThreatGrid 1.0
+	HarfangLab-GetBinary 1.0
+	HarfangLab-UnisolateHost 1.0
+	Robtex_Reverse_PDNS_Query 1.0
+	Gmail_UnblockDomain 1.0
+	PassiveTotal_Ssl_Certificate_Details 2.0
+	PaloAltoNGFW_block_internal_user 1.0.0
+	AMPforEndpoints_IsolationStart 1.0
+	Hashdd_Status 2.0
+	PaloAltoNGFW_unblock_port_for_external_communication 1.0.0
+	PaloAltoCortexXDR_unisolate 1.0
+	HarfangLab-GetArtifactFilesystem 1.0
+	PaloAltoNGFW_unblock_internal_IP_address 1.0.0
+	DNSDB_NameHistory 2.0
+	PhishingInitiative_Lookup 2.0
+	AMPforEndpoints_IsolationStop 1.0
+	SoltraEdge 1.0
+	Pulsedive_GetIndicator 1.0
+	QRadar_Auto_Closing_Offense 1.0
+	IBMXForce_Lookup 1.0
+	Gmail_UnblockSender 1.0
+	Splunk_Search_URL_URI_Path 3.0
+	RiskIQ_HostpairChildren 1.0
+	IVRE 1.0
+	MSDefender-PushIOC-Alert 1.0
+	JoeSandbox_Url_Analysis 2.0
+	HarfangLab-DumpProcess 1.0
+	GreyNoise 3.1
+	Censys 1.0
+	CISMCAP 1.0
+	Malwares_Scan 1.0
+	Robtex_IP_Query 1.0
+	HippoMore 2.0
+	PaloAltoNGFW_unblock_external_user 1.0.0
+	HybridAnalysis_GetReport 1.0
+	DuoLockUserAccount 1.0
+	AMPforEndpoints_SCDRemove 1.0
+	ClamAV_FileInfo 1.1
+	PaloAltoNGFW_block_port_for_internal_communication 2.0.0
+	HarfangLab-GetRunKeys 1.0
+	ForcepointWebsensePing 1.0
+	Shodan_Search 2.0
+	Umbrella_Report 1.0
+	PassiveTotal_Components 2.0
+	AzureTokenRevoker 1.0
+	MetaDefenderCore_GetReport 1.0
+	Diario_GetReport 1.0
+	MalwareClustering_Search 1.0
+	Mnemonic_pDNS_Closed 3.0
+	Splunk_Search_File_Filename 3.0
+	HarfangLab-GetProcesses 1.0
+	UnshortenLink 1.2
+	Onyphe_Summary 1.0
+	AnyRun_Sandbox_Analysis 1.0
+	HarfangLab-GetArtifactEvtx 1.0
+
+2024-03-30 12:10:19,854 [INFO] from org.thp.cortex.services.DockerJobRunnerSrv in main - Docker is available:
+Info{architecture=x86_64, clusterStore=null, cgroupDriver=cgroupfs, containers=21, containersRunning=9, containersStopped=12, containersPaused=0, cpuCfsPeriod=true, cpuCfsQuota=true, debug=false, dockerRootDir=/var/lib/docker, storageDriver=overlay2, driverStatus=[[Backing Filesystem, extfs], [Supports d_type, true], [Using metacopy, false], [Native Overlay Diff, true], [userxattr, false]], executionDriver=null, experimentalBuild=false, httpProxy=http.docker.internal:3128, httpsProxy=http.docker.internal:3128, id=bb294937-7a53-457c-beed-7691ff4b4eed, ipv4Forwarding=true, images=95, indexServerAddress=https://index.docker.io/v1/, initPath=null, initSha1=null, kernelMemory=null, kernelVersion=5.15.146.1-microsoft-standard-WSL2, labels=[], memTotal=10334838784, memoryLimit=true, cpus=8, eventsListener=17, fileDescriptors=147, goroutines=206, name=docker-desktop, noProxy=hubproxy.docker.internal, oomKillDisable=true, operatingSystem=Docker Desktop, osType=linux, plugins=Plugins{volumes=[local], networks=[bridge, host, ipvlan, macvlan, null, overlay]}, registryConfig=RegistryConfig{indexConfigs={docker.io=IndexConfig{name=docker.io, mirrors=[], secure=true, official=true}, hubproxy.docker.internal:5555=IndexConfig{name=hubproxy.docker.internal:5555, mirrors=[], secure=false, official=false}}, insecureRegistryCidrs=[127.0.0.0/8]}, serverVersion=25.0.3, swapLimit=true, swarm=SwarmInfo{cluster=null, controlAvailable=false, error=, localNodeState=inactive, nodeAddr=, nodeId=, nodes=null, managers=null, remoteManagers=null}, systemStatus=[], systemTime=Sat Mar 30 12:10:18 UTC 2024}
+2024-03-30 12:10:20,004 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python hasn't been found
+2024-03-30 12:10:20,007 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python2 hasn't been found
+2024-03-30 12:10:20,009 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python3 hasn't been found
+2024-03-30 12:10:21,413 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in main - Creating HTTP client on http://172.21.0.6:9200
+2024-03-30 12:10:23,715 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2024-03-30 12:10:24,039 [WARN] from org.elastic4play.database.SearchWithScroll in application-akka.actor.default-dispatcher-5 - Search error
+com.sksamuel.elastic4s.http.JavaClientExceptionWrapper: java.net.ConnectException: Connection refused
+	at com.sksamuel.elastic4s.http.JavaClient$$anon$1.onFailure(JavaClient.scala:70)
+	at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onDefinitiveFailure(RestClient.java:668)
+	at org.elasticsearch.client.RestClient$1.failed(RestClient.java:417)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:137)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.executionFailed(DefaultClientExchangeHandlerImpl.java:101)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.failed(AbstractClientExchangeHandler.java:426)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.connectionRequestFailed(AbstractClientExchangeHandler.java:348)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.access$100(AbstractClientExchangeHandler.java:62)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler$1.failed(AbstractClientExchangeHandler.java:392)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:137)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$1.failed(PoolingNHttpClientConnectionManager.java:316)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:137)
+	at org.apache.http.nio.pool.RouteSpecificPool.failed(RouteSpecificPool.java:162)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestFailed(AbstractNIOConnPool.java:609)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.failed(AbstractNIOConnPool.java:889)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.failed(SessionRequestImpl.java:162)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:176)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	... 5 common frames omitted
+2024-03-30 12:10:29,707 [INFO] from play.core.server.AkkaHttpServer in main - Enabling HTTP/2 on Akka HTTP server...
+2024-03-30 12:10:29,723 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0.0.0.0:9001
+2024-03-30 12:11:31,985 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.21.0.1 GET / took 70ms and returned 303 0 bytes
+2024-03-30 12:11:32,384 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-10 - 172.21.0.1 GET /index.html took 214ms and returned 304 0 bytes
+2024-03-30 12:11:32,531 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-12 - 172.21.0.1 GET /assets/styles/css/app.c1f34f54314be47309d2.css took 45ms and returned 304 0 bytes
+2024-03-30 12:11:32,554 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.21.0.1 GET /app.c1f34f54314be47309d2.js took 31ms and returned 304 0 bytes
+2024-03-30 12:11:34,109 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-13 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2024-03-30 12:11:34,188 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-13 - GET /api/user/current returned 500
+2024-03-30 12:11:34,221 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-13 - 172.21.0.1 GET /api/user/current took 796ms and returned 500 75 bytes

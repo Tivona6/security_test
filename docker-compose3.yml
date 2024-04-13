@@ -1,0 +1,256 @@
+version: "3.7"
+services:
+  thehive:
+    image: strangebee/thehive:5.2
+    restart: unless-stopped
+    depends_on:
+      - cassandra
+      - elasticsearch
+      - minio
+      - cortex
+    mem_limit: 1500m
+    ports:
+      - "0.0.0.0:9000:9000"
+    environment:
+      - JVM_OPTS="-Xms1024M -Xmx1024M"
+    command:
+      - --secret
+      - "lab123456789"
+      - "--cql-hostnames"
+      - "cassandra"
+      - "--index-backend"
+      - "elasticsearch"
+      - "--es-hostnames"
+      - "elasticsearch"
+      - "--s3-endpoint"
+      - "http://minio:9002"
+      - "--s3-access-key"
+      - "minioadmin"
+      - "--s3-secret-key"
+      - "minioadmin"
+      - "--s3-use-path-access-style"
+      #- "--no-config-cortex"
+      - "--cortex-port"
+      - "9001"
+      - "--cortex-keys"
+      - "9ntcjdkwN/KVUMLSka7kqX7/XPkaplnT"
+    volumes:
+      - ./thehive/conf/application.conf:/etc/thehive/application.conf 
+    networks:
+      - SOC_NET
+
+  cassandra:
+    image: 'cassandra:4'
+    mem_limit: 1600m
+    ports:
+      - "9042:9042"
+    environment:
+      - MAX_HEAP_SIZE=1024M
+      - HEAP_NEWSIZE=1024M
+      - CASSANDRA_CLUSTER_NAME=TheHive
+    volumes:
+      - cassandradata:/var/lib/cassandra
+    restart: on-failure
+    networks:
+      - SOC_NET
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.12
+    restart: unless-stopped
+    mem_limit: 512m
+    ports:
+      - "0.0.0.0:9200:9200"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - cluster.name=hive
+      - http.host=0.0.0.0
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+    volumes:
+      - elasticsearchdata:/usr/share/elasticsearch/data
+    networks:
+      - SOC_NET
+
+  minio:
+    image: quay.io/minio/minio
+    restart: unless-stopped
+    command: ["minio", "server", "/data", "--console-address", ":9002"]
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    ports:
+      - "0.0.0.0:9002:9002"
+    volumes:
+      - "miniodata:/data"
+    networks:
+      - SOC_NET
+
+  cortex:
+    image: thehiveproject/cortex:latest
+    restart: unless-stopped
+    environment:
+      - job_directory=/opt/cortex/jobs
+    volumes:
+      - cortexdata:/var/run/docker.sock
+      - cortexdata:/opt/cortex/jobs
+      - cortexdata:/var/log/cortex
+      - cortexdata:/cortex/application.conf
+    depends_on:
+      - elasticsearch
+    ports:
+      - "0.0.0.0:9001:9001"
+    networks:
+      - SOC_NET
+
+  misp:
+    image: coolacid/misp-docker:core-latest
+    restart: unless-stopped
+    depends_on: 
+      - misp_mysql
+    ports:
+      - "0.0.0.0:80:80"
+      - "0.0.0.0:443:443"
+    volumes:
+      - "./server-configs/:/var/www/MISP/app/Config/"
+      - "./logs/:/var/www/MISP/app/tmp/logs/"
+      - "./files/:/var/www/MISP/app/files"
+      - "./ssl/:/etc/nginx/certs"
+    environment:
+      - MYSQL_HOST=misp_mysql
+      - MYSQL_DATABASE=mispdb
+      - MYSQL_USER=mispuser
+      - MYSQL_PASSWORD=misppass
+      - MISP_ADMIN_EMAIL=mispadmin@lab.local
+      - MISP_ADMIN_PASSPHRASE=mispadminpass
+      - MISP_BASEURL=localhost
+      - TIMEZONE=Europe/London
+      - "INIT=true"         
+      - "CRON_USER_ID=1"   
+      - "REDIS_FQDN=redis"
+      - "HOSTNAME=https://localhost"
+    networks:
+      - SOC_NET
+
+  misp_mysql:
+    image: mysql/mysql-server:5.7
+    restart: unless-stopped
+    volumes:
+      - mispsqldata:/var/lib/mysql   
+    environment:
+      - MYSQL_DATABASE=mispdb
+      - MYSQL_USER=mispuser
+      - MYSQL_PASSWORD=misppass
+      - MYSQL_ROOT_PASSWORD=mispass
+    networks:
+      - SOC_NET
+  redis:
+    image: redis:5.0.6
+    networks:
+      - SOC_NET
+  misp-modules:
+    image: coolacid/misp-docker:modules-latest
+    environment:
+      - "REDIS_BACKEND=redis"
+    depends_on:
+      - redis
+      - misp_mysql
+    networks:
+      - SOC_NET   
+  # frontend:
+  #   image: ghcr.io/shuffle/shuffle-frontend:latest
+  #   container_name: shuffle-frontend
+  #   hostname: shuffle-frontend
+  #   ports:
+  #     - "${FRONTEND_PORT}:80"
+  #     - "${FRONTEND_PORT_HTTPS}:443"
+  #   networks:
+  #     - SOC_NET
+  #   environment:
+  #     - BACKEND_HOSTNAME=${BACKEND_HOSTNAME}
+  #   restart: unless-stopped
+  #   depends_on:
+  #     - backend
+  # backend:
+  #   image: ghcr.io/shuffle/shuffle-backend:latest
+  #   container_name: shuffle-backend
+  #   hostname: ${BACKEND_HOSTNAME}
+  #   # Here for debugging:
+  #   ports:
+  #     - "${BACKEND_PORT}:5001"
+  #   networks:
+  #     - SOC_NET  
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #     - ${SHUFFLE_APP_HOTLOAD_LOCATION}:/shuffle-apps:z
+  #     - ${SHUFFLE_FILE_LOCATION}:/shuffle-files:z
+  #   env_file: .env
+  #   environment:
+  #     #- DOCKER_HOST=tcp://docker-socket-proxy:2375
+  #     - SHUFFLE_APP_HOTLOAD_FOLDER=/shuffle-apps
+  #     - SHUFFLE_FILE_LOCATION=/shuffle-files
+  #   restart: unless-stopped
+  # orborus:
+  #   image: ghcr.io/shuffle/shuffle-orborus:latest
+  #   container_name: shuffle-orborus
+  #   hostname: shuffle-orborus
+  #   networks:
+  #     - SOC_NET
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   environment:
+  #     - SHUFFLE_APP_SDK_TIMEOUT=300
+  #     - SHUFFLE_ORBORUS_EXECUTION_CONCURRENCY=7 # The amount of concurrent executions Orborus can handle. 
+  #     #- DOCKER_HOST=tcp://docker-socket-proxy:2375
+  #     - ENVIRONMENT_NAME=${ENVIRONMENT_NAME}
+  #     - BASE_URL=http://${OUTER_HOSTNAME}:5001
+  #     - DOCKER_API_VERSION=1.40
+  #     - SHUFFLE_BASE_IMAGE_NAME=${SHUFFLE_BASE_IMAGE_NAME}
+  #     - SHUFFLE_BASE_IMAGE_REGISTRY=${SHUFFLE_BASE_IMAGE_REGISTRY}
+  #     - SHUFFLE_BASE_IMAGE_TAG_SUFFIX=${SHUFFLE_BASE_IMAGE_TAG_SUFFIX}
+  #     - HTTP_PROXY=${HTTP_PROXY}
+  #     - HTTPS_PROXY=${HTTPS_PROXY}
+  #     - SHUFFLE_PASS_WORKER_PROXY=${SHUFFLE_PASS_WORKER_PROXY}
+  #     - SHUFFLE_PASS_APP_PROXY=${SHUFFLE_PASS_APP_PROXY}
+  #     - SHUFFLE_STATS_DISABLED=true
+  #   restart: unless-stopped
+  #   security_opt:
+  #     - seccomp:unconfined
+  # opensearch:
+  #   image: opensearchproject/opensearch:2.11.0
+  #   hostname: shuffle-opensearch
+  #   container_name: shuffle-opensearch
+  #   environment:
+  #     - "OPENSEARCH_JAVA_OPTS=-Xms2048m -Xmx2048m" # minimum and maximum Java heap size, recommend setting both to 50% of system RAM
+  #     - bootstrap.memory_lock=true
+  #     - DISABLE_PERFORMANCE_ANALYZER_AGENT_CLI=true
+  #     - cluster.initial_master_nodes=shuffle-opensearch
+  #     - cluster.routing.allocation.disk.threshold_enabled=false
+  #     - cluster.name=shuffle-cluster
+  #     - node.name=shuffle-opensearch
+  #     - node.store.allow_mmap=false
+  #     - discovery.seed_hosts=shuffle-opensearch
+  #   ulimits:
+  #     memlock:
+  #       soft: -1
+  #       hard: -1
+  #     nofile:
+  #       soft: 65536 
+  #       hard: 65536
+  #   volumes:
+  #     - ${DB_LOCATION}:/usr/share/opensearch/data:z
+  #   ports:
+  #     - 9300:9300
+  #   networks:
+  #     - SOC_NET
+  #   restart: unless-stopped
+volumes:
+  miniodata:
+  cassandradata:
+  elasticsearchdata:
+  cortexdata:
+  thehivedata:
+  mispsqldata:
+
+networks:
+    SOC_NET:
+          driver: bridge

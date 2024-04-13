@@ -1,0 +1,6 @@
+Warning Error: Redis::zRangeByScore(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex-scheduler/lib/ResqueScheduler/ResqueScheduler.php, line 248]
+
+Warning Error: Redis::zRangeByScore(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex-scheduler/lib/ResqueScheduler/ResqueScheduler.php, line 248]
+
+Warning Error: Redis::zRangeByScore(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex-scheduler/lib/ResqueScheduler/ResqueScheduler.php, line 248]
+

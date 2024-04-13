@@ -1,0 +1,8 @@
+[2024-04-10 15:59:11] main.INFO: *** Starting scheduler worker 8902f2f81702:1268:_schdlr_ {"type":"start","worker":"8902f2f81702:1268","queues":["_schdlr_"]} []
+[2024-04-10 15:59:11] main.INFO: Starting worker 8902f2f81702:1268:_schdlr_ {"type":"start","worker":"8902f2f81702:1268:_schdlr_"} []
+[2024-04-10 17:08:27] main.INFO: *** Starting scheduler worker 1d1bd6586059:1679:_schdlr_ {"type":"start","worker":"1d1bd6586059:1679","queues":["_schdlr_"]} []
+[2024-04-10 17:08:27] main.INFO: Starting worker 1d1bd6586059:1679:_schdlr_ {"type":"start","worker":"1d1bd6586059:1679:_schdlr_"} []
+[2024-04-10 17:55:24] main.INFO: *** Starting scheduler worker cc9d9c72141a:497:_schdlr_ {"type":"start","worker":"cc9d9c72141a:497","queues":["_schdlr_"]} []
+[2024-04-10 17:55:24] main.INFO: Starting worker cc9d9c72141a:497:_schdlr_ {"type":"start","worker":"cc9d9c72141a:497:_schdlr_"} []
+[2024-04-10 19:53:14] main.INFO: *** Starting scheduler worker 61fb3bc29886:1883:_schdlr_ {"type":"start","worker":"61fb3bc29886:1883","queues":["_schdlr_"]} []
+[2024-04-10 19:53:14] main.INFO: Starting worker 61fb3bc29886:1883:_schdlr_ {"type":"start","worker":"61fb3bc29886:1883:_schdlr_"} []

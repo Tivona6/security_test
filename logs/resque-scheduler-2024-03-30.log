@@ -1,0 +1,4 @@
+[2024-03-30 13:09:41] main.INFO: *** Starting scheduler worker 8902f2f81702:1175:_schdlr_ {"type":"start","worker":"8902f2f81702:1175","queues":["_schdlr_"]} []
+[2024-03-30 13:09:41] main.INFO: Starting worker 8902f2f81702:1175:_schdlr_ {"type":"start","worker":"8902f2f81702:1175:_schdlr_"} []
+[2024-03-30 14:12:34] main.INFO: *** Starting scheduler worker 8902f2f81702:653:_schdlr_ {"type":"start","worker":"8902f2f81702:653","queues":["_schdlr_"]} []
+[2024-03-30 14:12:34] main.INFO: Starting worker 8902f2f81702:653:_schdlr_ {"type":"start","worker":"8902f2f81702:653:_schdlr_"} []

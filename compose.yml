@@ -1,0 +1,172 @@
+version: "3"
+services:
+  thehive:
+    image: strangebee/thehive:5.2
+    depends_on:
+      - cassandra
+      - elasticsearch
+      - minio
+      - cortex
+    mem_limit: 1500m
+    ports:
+      - "9000:9000"
+    environment:
+      - JVM_OPTS="-Xms1024M -Xmx1024M"
+    command:
+      - --secret
+      - "mySecretForTheHive"
+      - "--cql-hostnames"
+      - "cassandra"
+      - "--index-backend"
+      - "elasticsearch"
+      - "--es-hostnames"
+      - "elasticsearch"
+      - "--s3-endpoint"
+      - "http://minio:9000"
+      - "--s3-access-key"
+      - "minioadmin"
+      - "--s3-secret-key"
+      - "minioadmin"
+      - "--s3-bucket"
+      - "thehive"
+      - "--s3-use-path-access-style"
+      - "--cortex-hostnames"
+      - "cortex"
+      - "--cortex-keys"
+      - "REPLACE_WITH_CORTEX_API_KEY"
+    volumes:
+      - thehivedata:/etc/thehive/application.conf
+    networks:
+      - SOC_NET
+
+
+  cassandra:
+    image: 'cassandra:4'
+    mem_limit: 1600m
+    ports:
+      - "9042:9042"
+    environment:
+      - MAX_HEAP_SIZE=1024M
+      - HEAP_NEWSIZE=1024M
+      - CASSANDRA_CLUSTER_NAME=TheHive
+    volumes:
+      - cassandradata:/var/lib/cassandra
+    restart: on-failure
+    networks:
+      - SOC_NET
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.12
+    mem_limit: 1500m
+    environment:
+      - "discovery.type=single-node"
+      - xpack.security.enabled=false
+    volumes:
+      - elasticsearchdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - SOC_NET
+
+  minio:
+    image: quay.io/minio/minio
+    mem_limit: 512m
+    command: ["minio", "server", "/data", "--console-address", ":9090"]
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    ports:
+      - "9090:9090"
+    volumes:
+      - "miniodata:/data"
+    networks:
+      - SOC_NET
+
+  cortex:
+    image: thehiveproject/cortex:3.1.8
+    depends_on:
+      - elasticsearch
+    environment:
+      - job_directory=/tmp/cortex-jobs
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/cortex-jobs:/tmp/cortex-jobs
+    ports:
+      - "9001:9001"
+    networks:
+      - SOC_NET
+  misp:
+    image: harvarditsecurity/misp:latest
+    depends_on:
+      - misp-db
+      - misp-redis
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_HOST=misp-db
+      - MYSQL_DATABASE=misp
+      - MYSQL_USER=misp
+      - MYSQL_PASSWORD=password
+      - MISP_ADMIN_EMAIL=admin@misp.example
+      - MISP_ADMIN_PASSPHRASE=another_strong_password_here
+      - MISP_BASEURL=http://localhost:8080
+      - REDIS_HOSTNAME=misp-redis
+    volumes:
+      - mispdata:/var/www/MISP
+    networks:
+      - SOC_NET
+
+  misp-db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=another_strong_password
+      - MYSQL_DATABASE=misp
+      - MYSQL_USER=misp
+      - MYSQL_PASSWORD=password
+    volumes:
+      - misp-db-data:/var/lib/mysql
+    networks:
+      - SOC_NET
+
+  misp-redis:
+    image: redis:latest
+    networks:
+      - SOC_NET
+
+  wazuh-manager:
+    image: wazuh/wazuh-manager:4.7.3
+    ports:
+      - "1514:1514/udp"
+      - "1515:1515"
+      - "1516:1516"
+      - "514:514/udp"
+    volumes:
+      - /home/Coura/wazuh-data:/var/ossec/data
+    networks:
+      - SOC_NET
+    depends_on:
+      - elasticsearch
+
+  wazuh-dashboard:
+    image: wazuh/wazuh-dashboard:4.7.3
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - SOC_NET
+    depends_on:
+      - wazuh-manager
+      - elasticsearch
+
+volumes:
+  miniodata:
+  cassandradata:
+  elasticsearchdata:
+  mispdata:
+  misp-db-data:
+  thehivedata:
+
+networks:
+  SOC_NET:
+    driver: bridge

@@ -1,0 +1,1044 @@
+2024-03-30 19:40:46 Warning: Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Lib/Tools/PubSubTool.php, line 273]
+2024-03-30 19:40:52 Warning: Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Lib/Tools/PubSubTool.php, line 273]
+2024-03-30 20:25:34 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-03-30 20:25:38 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-03-30 20:25:41 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-03-30 20:25:45 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-03-30 20:25:49 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-03-30 20:25:53 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-03-30 20:25:57 Warning: Redis::pconnect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque/Redis.php, line 23]
+2024-04-10 17:11:43 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap.css",
+    "line-number": 9,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/favicon.png",
+    "line-number": 7,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap-datepicker.css",
+    "line-number": 10,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap-colorpicker.css",
+    "line-number": 11,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/font-awesome.css",
+    "line-number": 12,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/chosen.min.css",
+    "line-number": 13,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/main.css",
+    "line-number": 14,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/print.css",
+    "line-number": 15,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:44 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/jquery.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:11:48 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:26 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/misp-logo-s-u.png",
+    "line-number": 102,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:26 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/chosen.jquery.min.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:26 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/misp-touch.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:26 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:26 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-timepicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:47 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-colorpicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:47 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-datepicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:47 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/misp.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:47 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/keyboard-shortcuts-definition.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:12:55 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/keyboard-shortcuts.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:08 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/favicon.png",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/favicon.png",
+    "line-number": 7,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap.css",
+    "line-number": 9,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap-datepicker.css",
+    "line-number": 10,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap-colorpicker.css",
+    "line-number": 11,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/font-awesome.css",
+    "line-number": 12,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/chosen.min.css",
+    "line-number": 13,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/main.css",
+    "line-number": 14,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/print.css",
+    "line-number": 15,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:13:51 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/jquery.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:01 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:18 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/chosen.jquery.min.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:18 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/misp-logo-s-u.png",
+    "line-number": 51,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:18 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:18 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/misp-touch.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:38 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-timepicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:39 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-datepicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:39 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-colorpicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:39 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/misp.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:39 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/keyboard-shortcuts-definition.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:14:39 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/keyboard-shortcuts.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:15:00 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/favicon.png",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/favicon.png",
+    "line-number": 7,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap.css",
+    "line-number": 9,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap-datepicker.css",
+    "line-number": 10,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/bootstrap-colorpicker.css",
+    "line-number": 11,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/font-awesome.css",
+    "line-number": 12,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/chosen.min.css",
+    "line-number": 13,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/main.css",
+    "line-number": 14,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "style-src-elem",
+    "effective-directive": "style-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/css/print.css",
+    "line-number": 15,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:13 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/jquery.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:18 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:40 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/misp-logo-s-u.png",
+    "line-number": 105,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:40 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/chosen.jquery.min.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:40 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/misp-touch.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:40 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:20:40 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-timepicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:21:01 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-datepicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:21:01 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/bootstrap-colorpicker.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:21:01 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/misp.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:21:01 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/keyboard-shortcuts-definition.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:21:08 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "script-src-elem",
+    "effective-directive": "script-src-elem",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/js/keyboard-shortcuts.js",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:21:22 Error: CSP reported violation from IP 172.27.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "img-src",
+    "effective-directive": "img-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "https://10.200.200.253/img/favicon.png",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 17:34:59 Warning: Redis::zRangeByScore(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex-scheduler/lib/ResqueScheduler/ResqueScheduler.php, line 248]
+2024-04-10 17:34:59 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 17:34:59 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 17:35:00 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 17:35:00 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 17:35:01 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 17:57:22 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:01:30 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/users/view/1",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:02:55 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/admin/organisations/add",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 356,
+    "source-file": "https://localhost/admin/organisations/add",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:04:23 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/organisations/view/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:04:49 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/admin/users/add",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 141,
+    "source-file": "https://localhost/admin/users/add",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:06:30 Error: Exception during sending e-mail
+[SendEmailException] GPG signing is enabled, but GPG is not initialized. Check debug log why GPG could not be initialized.
+Stack Trace:
+#0 /var/www/MISP/app/Model/User.php(862): SendEmail->sendToUser()
+#1 /var/www/MISP/app/Model/User.php(983): User->sendEmail()
+#2 /var/www/MISP/app/Controller/UsersController.php(770): User->initiatePasswordReset()
+#3 [internal function]: UsersController->admin_add()
+#4 /var/www/MISP/app/Lib/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs()
+#5 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction()
+#6 /var/www/MISP/app/Lib/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke()
+#7 /var/www/MISP/app/webroot/index.php(99): Dispatcher->dispatch()
+#8 {main}
+2024-04-10 18:06:30 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/users/admin_index",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 127,
+    "source-file": "https://localhost/users/admin_index",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:07:13 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:07:15 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/dashboards",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 122,
+    "source-file": "https://localhost/dashboards",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:07:17 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 85,
+    "source-file": "https://localhost/",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:07:41 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/users/admin_index",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 75,
+    "source-file": "https://localhost/users/admin_index",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:07:44 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/admin/users/view/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 42,
+    "source-file": "https://localhost/admin/users/view/2",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:08:58 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/auth_keys/index/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 31,
+    "source-file": "https://localhost/auth_keys/index/2",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:09:02 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/admin/users/view/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 20,
+    "source-file": "https://localhost/admin/users/view/2",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:09:28 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/auth_keys/index/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 62,
+    "source-file": "https://localhost/auth_keys/index/2",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:10:10 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/auth_keys/view/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 51,
+    "source-file": "https://localhost/auth_keys/view/2",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:10:25 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/admin/users/index",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 55,
+    "source-file": "https://localhost/admin/users/index",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:10:28 Error: CSP reported violation from IP 172.28.0.1: {
+    "document-uri": "https://localhost/auth_keys/view/2",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 48,
+    "source-file": "https://localhost/auth_keys/view/2",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 18:21:31 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 18:21:32 Warning: Redis::zRangeByScore(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex-scheduler/lib/ResqueScheduler/ResqueScheduler.php, line 248]
+2024-04-10 18:21:32 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 18:21:32 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 18:21:32 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 18:21:33 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-10 19:53:34 Error: CSP reported violation from IP 172.21.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 19:53:42 Error: CSP reported violation from IP 172.21.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "line-number": 110,
+    "source-file": "https://localhost/users/login",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 19:59:33 Error: CSP reported violation from IP 172.21.0.1: {
+    "document-uri": "https://localhost/",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-10 20:16:31 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-12 21:11:12 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-12 21:11:12 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]
+2024-04-12 23:55:41 Error: CSP reported violation from IP 172.21.0.1: {
+    "document-uri": "https://localhost/users/login",
+    "referrer": "",
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "original-policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; base-uri 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; connect-src 'self'; manifest-src 'none'; report-uri /servers/cspReport; upgrade-insecure-requests",
+    "disposition": "report",
+    "blocked-uri": "data",
+    "status-code": 200,
+    "script-sample": ""
+}
+2024-04-13 00:14:50 Warning: Redis::zRangeByScore(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex-scheduler/lib/ResqueScheduler/ResqueScheduler.php, line 248]
+2024-04-13 00:14:52 Warning: Redis::lPop(): php_network_getaddresses: getaddrinfo failed: Name or service not known in [/var/www/MISP/app/Vendor/kamisama/php-resque-ex/lib/Resque.php, line 136]

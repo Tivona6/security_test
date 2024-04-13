@@ -1,0 +1,7 @@
+[2024-04-12 19:38:57] main.INFO: *** Starting scheduler worker 61fb3bc29886:1068:_schdlr_ {"type":"start","worker":"61fb3bc29886:1068","queues":["_schdlr_"]} []
+[2024-04-12 19:38:57] main.INFO: Starting worker 61fb3bc29886:1068:_schdlr_ {"type":"start","worker":"61fb3bc29886:1068:_schdlr_"} []
+[2024-04-12 20:39:27] main.INFO: Exiting... {"type":"shutdown","worker":"61fb3bc29886:1068"} []
+[2024-04-12 20:39:30] main.INFO: *** Starting scheduler worker 61fb3bc29886:1320:_schdlr_ {"type":"start","worker":"61fb3bc29886:1320","queues":["_schdlr_"]} []
+[2024-04-12 20:39:30] main.INFO: Starting worker 61fb3bc29886:1320:_schdlr_ {"type":"start","worker":"61fb3bc29886:1320:_schdlr_"} []
+[2024-04-12 23:55:40] main.INFO: *** Starting scheduler worker 61fb3bc29886:867:_schdlr_ {"type":"start","worker":"61fb3bc29886:867","queues":["_schdlr_"]} []
+[2024-04-12 23:55:40] main.INFO: Starting worker 61fb3bc29886:867:_schdlr_ {"type":"start","worker":"61fb3bc29886:867:_schdlr_"} []
